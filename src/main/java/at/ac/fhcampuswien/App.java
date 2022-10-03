@@ -111,9 +111,25 @@ public class App {
     public void getCommissionRate(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter CommissionClass: ");
-        float userinput = scanner.nextFloat();
+        int userinput = scanner.nextInt();
 
-        if (userinput == 1) {
+        switch(userinput) {
+            case 1:
+                System.out.println("Your Commission Rate was set to 0.01");
+                break;
+            case 2:
+                System.out.println("Your Commission Rate was set to 0.02");
+                break;
+            case 3:
+                System.out.println("Your Commission Rate was set to 0.03");
+                break;
+            case 4:
+                System.out.println("Your Commission Rate was set to 0.04");
+                break;
+            default:
+                System.out.println("Your Commission Rate was set to 0.0");
+        }
+        /*if (userinput == 1) {
             System.out.println("Your Commission Rate was set to 0.01");
         } else if (userinput == 2) {
             System.out.println("Your Commission Rate was set to 0.02");
@@ -123,7 +139,7 @@ public class App {
             System.out.println("Your Commission Rate was set to 0.04");
         }else {
             System.out.println("Your Commission Rate was set to 0.0");
-        }
+        }*/
     }
 
     //todo Task 9
